@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang='pt-br' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <title>Release notes - Be on the Net estático</title>
+    <meta content='Release notes, versão, Be on the Net, estático, design' name='keywords' />
+    <meta content='Contém uma descrição das modificações que vêm sendo feitas no projeto. Leia para compreender o que mudou desde a última vez que você atualizou os arquivos.' name='description' />
+
+    <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="../stylesheets/10_typography.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/30_color_screen_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/33_layout_handheld.css" media="handheld" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/37_layout_iphone.css" media="only screen and (max-device-width: 480px)" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/35_layout_print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/20_layout_screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/30_color_screen_handheld.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+      <link href="../stylesheets/40_layout_lteie7.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+      <link href="../stylesheets/50_layout_ie6.css" media="all" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  </head>
+
+  <body class="release-notes text" id="index">  
+    <div id='header'>
+      <p>
+        <strong id='logo_print'>
+          <img alt="Patricia Figueira" height="1" src="../images/logo_print.gif" width="1" />
+        </strong>
+        <strong id='logo_screen'>
+          <a href="../mod1(pictures)_pag01(index).html">Patricia Figueira</a>
+        </strong>
+      </p>
+
+      <em id='slogan'>A nova cara da fotografia social.</em>
+      <ul>
+        <li class="best_galleries"><a href="../mod1(pictures)_pag01(index).html">Melhores fotos</a></li>
+        <li class="all_videos"><a href="../mod5(videos)_pag14(index).html">Vídeos</a></li>
+        <li class="quem_somos"><a href="../mod2(text)_pag09(index).html">Quem somos</a></li>
+        <li class='contact'><a href="../mod3(contact)_pag10(index)_sit1(initial).html">Contato</a></li>
+        <li class='rsvp'><a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a></li>
+        <li class="blog"><a href="../mod4(application)_pag11(page_not_found).html">Erros</a></li>
+      </ul>
+    </div>
+
+    <hr id="header_delimiter" />
+
+    <div id='main_content'>
+      <h1 id="release_notes">Release notes:</h1>
+
+      <h2 id="on_07_jul_2009">07/jul/2009</h2>
+
+      <ul>
+        <li>Be on the Net Estático agora é <strong>HTML 5</strong>!</li>
+      </ul>
+
+      <h2 id="on_02_jun_2009">02/jun/2009</h2>
+
+      <ul>
+        <li>Inauguramos uma nova aba, &ldquo;Erros&rdquo;, que leva às páginas de erro (módulo <em>application</em>). Em cada erro, clicar de novo na aba Blog leva ao erro seguinte.</li>
+        <li>O slogan, que era uma elemento <strong>h2</strong>, agora virou um <strong>em</strong>. Concentramos a força dos <em>headings</em> no <code>#main_content</code>.</li>
+        <li>Adicionamos novas folhas de estilo, para layout em outras mídias: dispositivos móveis, impressão e iPhone. No Be on the Net Estático, elas estão vazias: não há CSS para esses meios. Mas quando o designer quiser fazer esse CSS em seu template, são essas as folhas que ele tem de usar.</li>
+        <li>Reordenamos as folhas de estilo. Adotamos um esquema de folhas que vai da mais genérica à mais específica, para facilitar ao designer a leitura: agora vem primeiro a tipografia (para todos os meios), depois a cor (para meios eletrônicos), depois os layouts (um para cada meio), e por último as exceções (para o IE).</li>
+        <li>Acrescentamos ao HTML as chamadas às novas folhas de estilo, para quando você quiser fazer CSS de layout para um dos meios citados anteriormente.</li>
+      </ul>
+
+      <h2 id="on_01_jun_2009">1&ordm;/jun/2009</h2>
+
+      <ul>
+        <li>Tornamos o nome da seção a única tag <strong>h1</strong> da página inteira, para melhorar o <abbr title="Search Engine Optimization, ou Otimização para Motores de Busca">SEO</abbr>.</li>
+        <li>No header, tiramos o logotipo de dentro de tags h1 e o pusemos dentro de tags <strong>strong</strong>, por sua vez englobadas por uma tag <strong>p</strong>.</li>
+        <li>Corrigimos o footer: o <strong>h1</strong> que havíamos implementado no dia <a href="#on_26_mai_2009">26/mai/2009</a> passa a ser um <strong>h2</strong>.</li>
+        <li>Incrementamos as tags <strong>hr</strong> com atributos <code>id</code>: agora as tags se chamam <code>&lt;hr id="header_delimiter" /&gt;</code> e <code>&lt;hr id="footer_delimiter" /&gt;</code>.</li>
+      </ul>
+
+      <h2 id="on_29_mai_2009">29/mai/2009</h2>
+
+      <ul>
+        <li>Adicionamos ao menu uma nova aba: <a href="../mod6(rsvp)_pag16(index)_sit1(initial).html">R.S.V.P.</a>, que inaugura o novo módulo <code>.rsvp</code>.</li>
+        <li>Renomeamos <strong>todos</strong> os arquivos de HTML para um novo padrão, que esperamos ser mais intuitivo para os designers. Aprenda a nova convenção na seção <a href="instrucoes.html#modulos_paginas_situacoes">Conhecendo o body &mdash; módulos páginas e situações</a>, na página de instruções. É <strong>altamente recomendável</strong> baixar sempre a última atualização do <a href="http://github.com/viniciusteles/beonthenet-estatico">beonthenet-estático</a>.</li>
+        <li>Atualizamos as <a href="instrucoes.html">instruções</a> de acordo com o novo esquema de nomeação acima.</li>
+      </ul>
+
+      <h2 id="on_26_mai_2009">26/mai/2009</h2>
+
+      <ul>
+        <li>Os arquivos de CSS foram renomeados de acordo com o padrão adotado em nossas configurações de clientes. A partir de agora, esta nomenclatura é uma convenção a ser seguida.</li>
+        <li>As chamadas por CSS no HTML mudaram de acordo.</li>
+        <li>Novo header: com duas linhas, para comportar mais abas.</li>
+        <li>O CSS das abas do menu ficou mais enxuto, legível e robusto.</li>
+        <li>No interior de cada galeria, os thumbnails estão mais próximos uns dos outros.</li>
+        <li>No footer, o <strong>h6</strong> que dizia &ldquo;Powered by <a href="http://beonthe.net">Be on the Net</a>&rdquo; agora é um <strong>h1</strong> que diz &ldquo;Criação do site: <a href="http://beonthe.net">Be on the Net</a>&rdquo;.</li>
+      </ul>
+
+      <h2 id="on_13_mar_2009">13/mar/2009</h2>  
+
+      <ul>
+        <li><strong>Be on the Net Estático 2.1</strong>, agora pronto para a vinda do Internet Explorer 8: a folha de estilos &ldquo;layout_ie.css&rdquo; virou &ldquo;40_layout_lteie7.css&rdquo;, e o HTML só chama exceções para as versões 7 ou inferior.</li>
+      </ul>
+
+      <h2 id="on_20_fev_2009">20/fev/2009</h2>  
+
+      <ul>
+        <li>Pequeno retoque: links de imagem grande para imagem grande e de vídeo grande para vídeo grande agora levam à altura do #subnavigation.</li>
+      </ul>
+
+      <h2 id="on_16_fev_2009">16/fev/2009</h2>  
+
+      <ul>
+        <li>Retiramos do #header a aba &ldquo;Álbuns&rdquo;, que era redundante. A aba &ldquo;Melhores&rdquo; agora se chama &ldquo;Melhores fotos&rdquo;.</li>
+        <li>Links que levam para imagens grandes ou vídeos grandes agora levam à altura do #subnavigation.</li>
+      </ul>
+
+      <h2 id="on_13_fev_2009">13/fev/2009</h2>  
+
+      <ul>
+        <li><strong>Be on the Net Estático 2.0</strong> no ar!</li>
+        <li>O CSS voltou a validar. O erro anterior era porque as páginas continuavam chamando uma folha de estilos que já havia sido removida. As chamadas acabam de ser retiradas.</li>
+        <li>Atualizamos o <a href="faq.html">F.A.Q.</a>.</li>
+        <li>Atualizamos as <a href="instrucoes.html">instruções</a>.</li>
+      </ul>
+
+      <h2 id="on_12_fev_2009">12/fev/2009</h2>
+
+      <ul>
+      <li>Mais links funcionam; aumentou a usabilidade.</li>
+      <li>Eliminamos o scroll horizontal que browsers tipo Webkit (Safari e Chrome) mostravam na página de seleção. Deu uma enxugada no CSS.</li>
+      <li>Páginas do módulo de texto (aquelas com <code>body.text</code>) agora têm CSS unificado. São a página Quem Somos (arquivo &ldquo;mod2(text)_pag09(index).html&rdquo;) e a de Instruções (arquivo &ldquo;instrucoes.html&rdquo;).</li>
+      <li>Reformatamos o release-notes para vir com as mudanças mais recentes no topo.</li>
+      <li>Implementamos no <a href="#footer">rodapé</a> de todas as das páginas um sistema de links para <em>todos</em> os arquivos de informações do Be on the Net estático.</li>
+      </ul>
+
+      <h2 id="on_11_fev_2009">11/fev/2009</h2>
+
+      <ul>
+      <li>A maioria dos links agora funciona. Agora, o beonthenet-estatico é um pouco menos estático: é possível navegar por todas as páginas clicando nos links, menus, tags, imagens e botões. O designer vai ter uma noção melhor do workflow do sistema, e de que página leva a que página.</li>
+      <li>Melhoramos a legibilidade dos arquivos HTML, com melhores indentações em trechos relevantes.</li>
+      <li>Retocamos o CSS da página de erros.</li>
+      </ul>
+
+      <h2 id="on_10_fev_2009">10/fev/2009</h2>
+
+      <ul>
+      <li>Refatoramos o CSS. Agora o projeto está tinindo no IE6 e 7.</li>
+      <li>Os links para as fichas técnicas agora realmente levam às fichas técnicas.</li>
+      <li>Renomeamos o arquivo &ldquo;05(pictures)_best_galleries_pictures_sent(05_error).html&rdquo; (ver dia <a href="#06_fev_2009">06/fev/2009</a>) para &ldquo;mod1(pictures)_pag06(pictures_sent)_sit1(error).html&rdquo;.</li>
+      <li>Páginas com <code>body.text</code> agora têm padding maior no <code>div#main_content</code>. Vimos que é uma boa prática manter estreitas as colunas de texto corrido.</li>
+      <li>Atualizamos o arquivo &ldquo;instrucoes.html&rdquo;. Não se esqueça de dar uma olhada neste arquivo!</li>
+      </ul>
+
+      <h2 id="on_06_fev_2009">06/fev/2009</h2>
+
+      <ul>
+        <li>Novo formulário de checkout, com três campos em vez de um.</li>
+        <li style="text-align:left">Novo arquivo: erro de envio no checkout &mdash; arquivo &ldquo;05(pictures)_best_galleries_pictures_sent(05_error).html&rdquo; (ver 20/dez/2008).</li>
+        <li style="text-align:left">Novo div: &ldquo;#picture_description&rdquo;, nas páginas de imagem grande &mdash; &ldquo;mod1(pictures)_pag03(picture)_sit1(horizontal).html&rdquo; e &ldquo;mod1(pictures)_pag03(picture)_sit2(vertical).html&rdquo;.</li>
+      <li>CSS para tudo isso.</li>
+      <li>Atualizamos o arquivo &ldquo;instrucoes.html&rdquo;.</li>
+      </ul>
+
+      <h2 id="on_21_jan_2009">21/jan/2009</h2>
+
+      <ul>
+        <li>Mudanças no <code>div#header</code>:
+          <ul>
+            <li>Inserimos o <code>h2#slogan</code>, uma tag em que o usuário poderá veicular o slogan de seu negócio.</li>
+            <li>No menu principal, acrescentamos a classe <code>.current</code> a cada <code>&lt;li&gt;</code> ativo. Isso traz simplicidade e flexibilidade ao CSS deste trecho.</li>
+            <li>Retiramos os ícones do menu prinicpal, para deixá-lo flexível a qualquer tipo de negócio. Percebemos que os ícones limitavam a versatilidade do template.</li>
+          </ul>
+        </li>  
+        <li>Atualizamos os thumbnails da página de vídeos &ldquo;mod5(videos)_pag14(index).html&rdquo;; agora os thumbnails aparecem de novo.</li>
+      </ul>
+
+      <h2 id="on_20_dez_2008">20/dez/2008</h2>
+
+      <ul>
+        <li>Nos arquivos de CSS, toda vez que o identificador &ldquo;checkout&rdquo;; era usado, passou a ser necessário usar também o identificador &ldquo;pictures_sent&rdquo;. A razão disso é uma mudança estrutural que foi implementada, que passa a permitir que, na seleção de imagens, o usuário final coloque mais dados de contato: nome, telefones e e-mail.</li>
+      </ul>
+
+      <h2 id="on_12_dez_2008">12/dez/2008</h2>
+
+      <ul>
+        <li>Acrescentamos o arquivo <em>fontes-de-material-creative-commons.txt</em>. Ele contém uma lista de sites onde é possível achar material comumente disponibilizado como Creative Commons Attribution.</li>
+      </ul>
+
+      <h2 id="on_05_dez_2008">05/dez/2008</h2>
+
+      <ul>
+        <li>Adicionamos o <a href="../modelo-do-contrato.pdf">modelo do contrato</a> ao pacote.</li>
+      </ul>
+
+      <h2 id="on_18_nov_2008">18/nov/2008</h2>
+
+      <ul>
+        <li>Página de instruções atualizada, com índice.</li>
+        <li>Consertamos os links da página &ldquo;instrucoes.html&rdquo;. Agora eles levam a algum lugar.</li>
+        <li>Inserimos uma linha com a folha de estilo 30_color_screen_handheld contendo efetivamente o media=&ldquo;handheld&rdquo;.</li>
+        <li>Novas seções, e uma tabela com todas as situações possíveis.</li>
+      </ul>
+
+      <h2 id="on_on_17_nov_2008">17/nov/2008</h2>
+
+      <ul>
+        <li>Retiramos o conteúdo da tag <code>&lt;title&gt;</code> para deixar os arquivos menos poluídos, e os substituímos pelos respectivos nomes dos arquivo HTML.</li>
+        <li>Retiramos a maior parte das tags <code>&lt;meta&gt;</code> para reduzir a poluição dos arquivos.</li>
+        <li>Renomeamos <em>form_spinner.gif</em> para <em>spinner_form.gif</em>.</li>
+        <li>Renomeados <em>facebox_spinner.gif</em> para <em>spinner_selection.gif</em>.</li>
+        <li>Retiramos os números que havia após os nomes dos arquivos CSS. Exemplo: <code>layout_ie.css?1234567890</code> passou a ser apenas <code>layout_ie.css</code>. Estes números não tinham nenhuma importância para o trabalho de estilização, mas tornavam o código ligeiramente mais poluído.</li>
+        <li>Retiramos as referências para os arquivos JavaScript, pois são desnecessárias para o processo de estilização.</li>
+        <li>Retiramos as referências para o arquivo <code>04_admin.css</code>. A parte de admin não é englobada pelo template.</li>
+        <li>Reduzimos o tamanho das propriedades <code>alt</code> e <code>title</code> para reduzir a poluição.</li>
+        <li>Fizemos com que todos os links passem a apontar apenas para &ldquo;#&rdquo;. Isso também ajudou a reduzir a poluição visual.</li>
+        <li>Retiramos uma chamada JavaScript relativa ao Google Analytics que aparecia ao final de cada arquivo.</li>
+        <li>Indentação nos links para os arquivos CSS.</li>
+        <li>Movemos os diretórios <em>images</em> e <em>stylesheets</em> para a raiz.</li>
+        <li>Retiramos todos os eventos de JavaScript que estavam presentes em algumas páginas HTML.</li>
+        <li>Melhoramos a formatação da ficha técnica para facilitar a compreensão de sua organização.</li>
+      </ul>
+    </div>
+
+    <hr id="footer_delimiter" />
+
+    <div id='footer'>
+      <p>
+        Be on the Net estático: por <strong><a href="http://improveit.com.br/empresa/leandro" title="Leandro Mello é designer da Improve It.">Leandro Mello</a></strong>, designer da <a href="http://improveit.com.br/br" title="Improve It rules.">Improve it</a>.<br /> Se você, designer, tiver <em>qualquer</em> dúvida em relação ao HTML, ao CSS ou a estas instruções, não se avexe, entre em <a href="http://improveit.com.br/contato" title="entre em contato, nós vamos tirar suas dúvidas.">contato</a>!
+      </p>
+
+      <h2>
+        <strong><a href="http://beonthe.net" title="Um title.">Criação do site</a></strong>: 
+        <a id="beonthenet" href="http://beonthe.net" title="Um title.">
+          <img src="../images/logo_footer.gif" alt="Be on the Net &mdash; fazer um site em 24h é com o Be on the Net. Montar um site agora é fácil. Crie seu site em minutos e tenha espaço ilimitado para imagens, fotos e vídeos. Modelos de sites (templates de sites) prontos para agilizar seu desenvolvimento web" title="Um title." /></a>.
+        Um <a href="http://beonthe.net" title="Um title.">produto</a> da <a id="improveit" href="http://improveit.com.br" title="Um title.">Improve It</a>.
+      </h2>
+
+      <h3>Design de <a href="http://improveit.com.br/empresa/leandro">Leandro Mello</a> para o <a href="http://beonthe.net" title="Um title.">Be on the Net</a>.</h3>
+
+      <h5>Links do projeto Be on the Net estático:</h5>
+      <h6>
+        <a href="readme.html">Mapa da Mina, o ponto de partida</a> / 
+        <a href="instrucoes.html">Instruções para fazer CSS</a> / 
+        <a href="faq.html">F.A.Q.</a> / 
+        <a href="#">Release notes</a> / 
+        <a href="fontes-de-material-creative-commons.html">Fontes de material Creative Commons</a> / 
+        <a href="../modelo-do-contrato.pdf">Modelo do contrato (.PDF)</a>
+      </h6>
+    </div>
+  </body>
+</html>
