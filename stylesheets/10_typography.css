@@ -44,9 +44,9 @@ h3, h3 a {
 }
 
 h4, h4 a {
-  font-size:              12px;
+  font-style:             italic;
+  font-size:              70%;
   text-decoration:       	none;
-  margin-bottom:			    10px;
   color:                  #9e9b99;
 }
 
@@ -79,6 +79,33 @@ h3 a:focus, h3 a:hover {
   text-decoration:        none; 
 }
 /* /Header tabbed menu */
+
+
+/* Flickr */
+#main_content h5, #main_content h5 a, 
+#big_picture cite, #big_picture cite a {
+  font-style:         italic;
+}
+
+#main_content h5, #big_picture cite {
+  font-size:          60%;
+  text-align:         right;
+}
+
+#main_content h5 a, #big_picture cite a {
+  font-size:          100%;
+  text-decoration:    underline !important;
+}
+
+#thumbnails cite {
+  font-size:          60%;
+}
+
+body #footer h6 {
+  font-size:          9px;
+  letter-spacing:     .02em;
+}
+/* /Flickr */
 
 
 /* Thumbnails */
@@ -222,11 +249,11 @@ ul#thumbnails a img {
 
 
 /* Tags */
-#tags p {
+#tags p, .tags p {
   line-height:            .5em;
 }
 
-#tags a:hover {
+#tags a:hover, .tags a:hover {
   text-decoration:        none;
 }
 /* /Tags */
@@ -381,29 +408,29 @@ body.application #main_content li {
 
 
 
-/* Text */
+/* Text and Blog */
 .text h1 + p:first-letter {
   font-size:              150%;
 }
 
 .text #main_content strong {
-  font-weight:            normal;
+/*  font-weight:            normal;*/
 }
 
 .text cite {
   text-align:             right;
 }
 
-.text #main_content dd, 
-.text #main_content ul li {
+.text #main_content dd, .text #main_content ul li, 
+.blog #main_content dd, .blog #main_content ul li {
   text-align:             justify;
 }
 
-.text #main_content ul li {
+.text #main_content ul li, .blog #main_content ul li {
   list-style:             circle;
 }
 
-.text #main_content ul ul li {
+.text #main_content ul ul li, .blog #main_content ul ul li {
   list-style:             disc;
   font-size:              95%;
 }
@@ -416,19 +443,32 @@ p code {
   font-size:              110%;
 }
 
-.text th {
+th {
   font-size:              90%;
 }
 
-.text td {
+td {
   font-size:              85%;
 } 
 
-.text td span {
+td span {
   font-size:              82%;
 }
 
-.text td a {
+td a {
   font-size:              80%;
 }
-/* /Text */
+/* /Text and Blog */
+
+
+/* Blog */
+.article {
+  font-size:              75%;
+  line-height:            1.7em;
+}
+
+.article * {
+  font-size:              100%;
+  line-height:            1.7em;
+}
+/* /Blog */

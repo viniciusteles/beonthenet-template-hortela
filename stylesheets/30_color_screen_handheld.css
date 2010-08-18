@@ -109,6 +109,27 @@ h4 a:focus, h4 a:hover, h4 a:active {
 /* /Main content top segment */
 
 
+/* Flickr */
+#main_content h5 a, #big_picture cite a, 
+body #footer h6 {
+  color:              #666;
+}
+#main_content h5 a:hover, #big_picture cite a:hover {
+  color:              #557C2A;
+}
+body #footer h6 em {
+  color:              #888;
+}
+
+#thumbnails cite a {
+  background:         transparent url(../images/flickr.png) no-repeat left 10px;
+}
+#thumbnails cite a:hover {
+  background-image:   url(../images/flickr_hover.png);
+}
+/* /Flickr */
+
+
 /* Thumbnails */
 #thumbnails h3 a {
   color:                  #908E8D;
@@ -122,7 +143,7 @@ ul#thumbnails li div a:visited {
 	background:             url(../images/thumb_box_visited.png);
 }
 ul#thumbnails li div a:hover {
-	background:             url(../images/thumb_box_hover.png?1);
+	background:             url(../images/thumb_box_hover.png);
 }
 
 ul#thumbnails a img, 
@@ -242,15 +263,15 @@ ul#thumbnails a:hover label {
 
 
 /* Tags */
-#tags a {
+#tags a, .tags a {
   color:                  #908e8d;
 }
 
-#tags a:visited {
+#tags a:visited, .tags a:visited {
   color:                  #908e8d;
 }
 
-#tags a:hover {
+#tags a:hover, .tags a:hover {
   color:                  #fff;
   background-color:       #908e8d;
 }
@@ -452,9 +473,9 @@ body#timeout #main_content h2 {
 /* /Footer */
 
 
-/* Text */
-.text dt, 
-.text #main_content strong {
+/* Text and Blog */
+.text dt, .text #main_content strong, 
+.blog dt, .blog #main_content strong {
   color:                  #111;
 }
 
@@ -468,16 +489,16 @@ code {
   background:             #f5f5f4; 
 }
 
-.text table * {
+table * {
   border-color:           #ebebeb;
 }
 
-.text th {
+th {
   color:                  #908e8d;
   background:             #f5f5f4;
 }
 
-.text td span {
+td span {
   color:                  #666;
 }
 
@@ -485,4 +506,4 @@ pre {
   background:             #f5f5f4;
   border-color:           #ebebeb;
 }
-/* /Text */
+/* /Text and Blog */
